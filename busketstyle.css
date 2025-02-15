@@ -1,0 +1,86 @@
+body {
+	
+    font-family: 'Rockwell', sans-serif;
+    background-color: #ddd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Rockwell', serif; 
+    font-size: 36px; 
+    color: #FFFFF0; 
+    text-align: center; 
+    margin-bottom:15px;
+text-transform: capitalize;	
+}
+*{
+    font-family: 'Rockwell', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 800px;
+}
+
+li {
+	border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5FFFA;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 51px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+	
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+li:hover {
+    background-color: #B0E0E6;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    ul {
+        width: 95%;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
